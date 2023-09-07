@@ -24,6 +24,7 @@
     "test": "react-scripts test",
     "prettier": "npx prettier . --write **/*.{ts,tsx,json}",
     "test:e2e": "cypress open",
+    "lint:ts": "eslint \"**/*.{ts,tsx}\" ",
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
