@@ -5,8 +5,6 @@
 - [Запуск проекта](https://github.com/Ylquiorra/Todo-list#запуск-проекта)
 - [Скрипты](https://github.com/Ylquiorra/Todo-list#скрипты)
 - [Тесты](https://github.com/Ylquiorra/Todo-list#тесты)
-- [Vercel](https://github.com/Ylquiorra/Todo-list#netlify)
-- [Обзор компонентов и функционала](https://github.com/Ylquiorra/Todo-list#обзор-компонентов-и-функционала)
 
 ----
 
@@ -20,7 +18,6 @@
 ----
 
 ## Стек
-
 
 | Стэк         | Технологии                                             |
 |--------------|--------------------------------------------------------|
