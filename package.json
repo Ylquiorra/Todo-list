@@ -20,6 +20,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "prettier": "npx prettier . --write **/*.{ts,tsx,json}",
     "test:e2e": "cypress open",
