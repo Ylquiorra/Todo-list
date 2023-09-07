@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom/extend-expect'
 
-import { act, render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
+import { render, screen } from '@testing-library/react'
 
 import { RadioGroupSelect } from './RadioGroupSelect'
 import { GroupSelect, RadioSelectTodoValue } from '../types'

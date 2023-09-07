@@ -7,7 +7,7 @@ interface RadioGroupSelectProps {
   defaultValue: string
   buttonStyle?: 'outline' | 'solid'
   size?: 'small' | 'middle' | 'large'
-  updateRadioSelect?: any
+  updateRadioSelect?: (value: RadioSelectTodoValue) => void
 }
 
 const groupSelect: GroupSelect[] = [
@@ -21,14 +21,21 @@ export const RadioGroupSelect: FC<RadioGroupSelectProps> = memo((props) => {
 
   const onChangeSelect = useCallback(
     (event: RadioChangeEvent) => {
-      updateRadioSelect(event.target.value)
+      if (updateRadioSelect) {
+        updateRadioSelect(event.target.value)
+      }
     },
     [updateRadioSelect],
   )
 
   return (
-    <Radio.Group data-testid="RadioGroupSelect" onChange={onChangeSelect} size={size} defaultValue={defaultValue}
-buttonStyle={buttonStyle}>
+    <Radio.Group
+      data-testid="RadioGroupSelect"
+      onChange={onChangeSelect}
+      size={size}
+      defaultValue={defaultValue}
+      buttonStyle={buttonStyle}
+    >
       {groupSelect.map((select) => (
         <Radio.Button data-testid="RadioGroupSelect.Button" key={select.selectValue} value={select.selectValue}>
           {select.selectName}
